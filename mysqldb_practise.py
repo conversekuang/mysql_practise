@@ -2,9 +2,11 @@
 
 import MySQLdb
 
+
 #官方文档链接  http://mysql-python.sourceforge.net/MySQLdb.html
-#函数的参数名叫做passwd  并非  password
+#在MySQL API中参数名叫做passwd  而并非  password
 #test branch
+
 conn = MySQLdb.connect(host='localhost',user = 'root', passwd ='', db = 'user_information',charset='utf8')
 
 cursor = conn.cursor()
