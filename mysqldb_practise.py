@@ -2,8 +2,9 @@
 
 import MySQLdb
 
-# 官方文档  http://mysql-python.sourceforge.net/MySQLdb.html
-#参数名叫做passwd  并非  password
+#官方文档链接  http://mysql-python.sourceforge.net/MySQLdb.html
+#函数的参数名叫做passwd  并非  password
+#test branch
 conn = MySQLdb.connect(host='localhost',user = 'root', passwd ='', db = 'user_information',charset='utf8')
 
 cursor = conn.cursor()
@@ -18,6 +19,7 @@ def find_data():
 	return cursor.fetchall() 
 
 
+#show tables
 def show_tables():
 	res = cursor.execute("show tables")
 	ress = cursor.fetchall()
